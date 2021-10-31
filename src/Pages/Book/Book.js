@@ -11,7 +11,7 @@ const Book = () => {
   const [service, setService] = useState({});
   const { serviceId } = useParams();
   useEffect(() => {
-    axios.get(`https://shocking-zombie-48437.herokuapp.com/${serviceId}`)
+    axios.get(`https://shocking-zombie-48437.herokuapp.com/services/${serviceId}`)
       .then(res => {
         setService(res.data)
       })
@@ -21,6 +21,7 @@ const Book = () => {
     data.name = service.name;
     data.userId = user.uid;
     data.orderStatus = "pending";
+    console.log(data);
     axios.post('https://shocking-zombie-48437.herokuapp.com/orders', data)
       .then(res => {
         if (res.data.insertedId) {

@@ -12,9 +12,9 @@ const About = () => {
           <Card.Body>
             <Card.Title>Welcome to Niloy Tour Agency</Card.Title>
             <Card.Text>
-              Niloy Dental Care is a valued private dentist in Dhaka serving patients at mirpur and uttara dentists. We are a dedicated Dhaka dentist, providing excellence in dentistry using professional and affordable treatments. As your local dentist in Dhaka, we combine general dentistry with cosmetic and specialist treatments. We have been named Best Dhaka Dental Practice and several of our Bangladesh dentists have been nominated and awarded Best Young BD Dentist by the industry standards.
 
-              We offer everything from general dental treatments to complex full mouth rehabilitation including dental implants and orthodontics. We are also dental phobia certified for treating very nervous patients with care and compassion, making you feel as comfortable as possible. We offer a pleasant experience at our two leading Mirpur, Dhaka dentist locations.
+              Tourism is travel for pleasure or business; also the theory and practice of touring, the business of attracting, accommodating, and entertaining tourists, and the business of operating tours. The World Tourism Organization defines tourism more generally, in terms which go "beyond the common perception of tourism as being limited to holiday activity only", as people "traveling to and staying in places outside their usual environment for not more than one consecutive year for leisure and not less than 24 hours, business and other purposes". Tourism can be domestic (within the traveller's own country) or international, and international tourism has both incoming and outgoing implications on a country's balance of payments.
+
             </Card.Text>
           </Card.Body>
         </Card>

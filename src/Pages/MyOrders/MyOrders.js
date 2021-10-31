@@ -5,6 +5,7 @@ import useAuth from '../../hooks/useAuth';
 const MyOrders = () => {
   const { user } = useAuth();
   const [orders, setOrders] = useState([]);
+  console.log(orders);
   // DELETE AN ORDER
   const handleDeleteOrder = id => {
     const proceed = window.confirm('Are you sure, you want to delete?');
