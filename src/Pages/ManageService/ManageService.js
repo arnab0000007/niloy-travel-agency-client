@@ -42,6 +42,7 @@ const handleUpdateOrder = id => {
   return (
     <div className="pb-5">
       <h2 className="my-3 fw-bold">Manage All Services</h2>
+      <div className="table-responsive">
       <table className="container table table-light">
         <thead>
           <tr>
@@ -74,6 +75,9 @@ const handleUpdateOrder = id => {
           }
         </tbody>
       </table>
+      </div>
+     
+
     </div>
   );
 };
