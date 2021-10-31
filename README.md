@@ -1,5 +1,5 @@
 # Niloy Travel Agency
-* live link : https://niloy-travel-agency.web.app/
+* live link : https://niloy-tour-agency.web.app/
 ### Poject Description
 * Single Page Application 
 * fetched services from mongodb Server

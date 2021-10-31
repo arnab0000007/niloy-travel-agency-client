@@ -20,7 +20,7 @@ const MyOrders = () => {
     }
 }
   useEffect(() => {
-    axios.get(`https://shocking-zombie-48437.herokuapp.com/${user.uid}`)
+    axios.get(`https://shocking-zombie-48437.herokuapp.com/myOrders/${user.uid}`)
       .then(res => {
         setOrders(res.data)
       })
