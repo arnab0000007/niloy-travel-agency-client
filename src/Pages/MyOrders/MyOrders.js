@@ -29,7 +29,7 @@ const MyOrders = () => {
   }, []);
   return (
     <div className="p-5">
-      <h2 className="text-warning my-5">My Orders</h2>
+      <h2 className="mb-5 fw-bold">My Orders</h2>
       <table className="container table table-light">
         <thead>
           <tr>
@@ -49,7 +49,7 @@ const MyOrders = () => {
                 <td>{order.name}</td>
                 <td>{order.email}</td>
                 <td>{order.address}</td>
-                <td>{order.orderStatus}</td>
+                <td className={ order.orderStatus == "pending" ? "text-danger" : "text-success"}>{order.orderStatus}</td>
                 <td><button className="btn-danger btn btn-sm" onClick={() => handleDeleteOrder(order._id)}>X</button></td>
               </tr>
               
