@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 const ManageService = () => {
 const [allOrder, setAllOrder] = useState([]);
+const [special,setSpecial] = useState(true);
 
 // DELETE AN ORDER
 const handleDeleteOrder = id => {
@@ -9,11 +10,12 @@ const handleDeleteOrder = id => {
   if (proceed) {
      axios.delete(`https://shocking-zombie-48437.herokuapp.com/orders/${id}`)
           .then(res => {
-              if (res.deletedCount > 0) {
-                  alert('deleted successfully');
-                  const remainingUsers = allOrder.filter(order => order._id !== id);
-                  setAllOrder(remainingUsers);
-              }
+            if (res.data.deletedCount > 0) {
+              alert('deleted successfully');
+              const remainingUsers = allOrder.filter(order => order._id !== id);
+              setAllOrder(remainingUsers);
+
+          }
           });
   }
 }
@@ -25,6 +27,7 @@ const handleUpdateOrder = id => {
           .then(res => {
               if (res.data.modifiedCount > 0) {
                   alert('Approved successfully');
+                  setSpecial(!special);
               }
           });
   }
@@ -35,7 +38,7 @@ const handleUpdateOrder = id => {
         setAllOrder(res.data)
       })
 
-  }, []);
+  }, [special]);
   return (
     <div className="p-5">
       <h2 className="text-warning my-5">My Orders</h2>
