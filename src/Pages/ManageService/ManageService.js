@@ -41,7 +41,7 @@ const handleUpdateOrder = id => {
   }, [special]);
   return (
     <div className="pb-5">
-      <h2 className="my-5 fw-bold">Manage All Services</h2>
+      <h2 className="my-3 fw-bold">Manage All Services</h2>
       <table className="container table table-light">
         <thead>
           <tr>

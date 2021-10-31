@@ -33,12 +33,16 @@ const Book = () => {
   return (
     <div className="container ">
       <div className="row">
-        <div className="col-12">
-          <h1 className="p-5">Book {service.name}</h1>
-        </div>
-        <div className="col-lg-6 col-md-6 col-sm-8 col-12 m-auto mb-5 ">
+      <h1 className="py-3 fw-bold">Book {service.name}</h1>
 
-          <div className="login-main d-flex flex-column align-items-center bg-light py-5">
+        <div className="col-lg-6 col-md-6 col-sm-12 col-12 m-auto my-3">
+          <p className="py-1">Details About {service.name} Tour Package</p>
+          <small className="text-secondary ">{service.description}</small>
+        </div>
+
+        <div className="col-lg-6 col-md-6 col-sm-12 col-12 m-auto my-3 ">
+
+          <div className="login-main d-flex flex-column align-items-center bg-light p-5">
             <form className="" onSubmit={handleSubmit(onSubmit)}>
 
               <input placeholder="Input Email" type="email" className="d-block mb-3  px-5" {...register("email", { required: true })} />
@@ -53,7 +57,7 @@ const Book = () => {
               <input type="submit" className="d-inline btn btn-warning" />
             </form>
     
-          </div>
+        </div>
         </div>
       </div>
     </div>

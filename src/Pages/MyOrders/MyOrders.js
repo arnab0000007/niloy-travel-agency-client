@@ -28,7 +28,7 @@ const MyOrders = () => {
 
   }, []);
   return (
-    <div className="p-5">
+    <div className="py-3">
       <h2 className="mb-5 fw-bold">My Orders</h2>
       <table className="container table table-light">
         <thead>
